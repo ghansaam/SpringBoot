@@ -1,0 +1,121 @@
+== User Management
+
+=== Create User
+
+*Method*: POST
+*URL*: http://localhost:8080/api/users
+*Content-Type*: application/json
+
+[source,json]
+----
+{
+  "username": "example_user",
+  "password": "example_password",
+  "email": "example@example.com"
+}
+----
+
+=== Get User by ID
+
+*Method*: GET
+*URL*: http://localhost:8080/api/users/{id}
+
+=== Update User
+
+*Method*: PUT
+*URL*: http://localhost:8080/api/users/{id}
+*Content-Type*: application/json
+
+[source,json]
+----
+{
+  "username": "updated_username",
+  "password": "updated_password",
+  "email": "updated@example.com"
+}
+----
+
+=== Delete User
+
+*Method*: DELETE
+*URL*: http://localhost:8080/api/users/{id}
+
+
+== Role Management
+
+=== Create Role
+
+*Method*: POST
+*URL*: http://localhost:8080/api/roles
+*Content-Type*: application/json
+
+[source,json]
+----
+{
+  "name": "example_role",
+  "description": "Example role description"
+}
+----
+
+=== Get Role by ID
+
+*Method*: GET
+*URL*: http://localhost:8080/api/roles/{id}
+
+=== Update Role
+
+*Method*: PUT
+*URL*: http://localhost:8080/api/roles/{id}
+*Content-Type*: application/json
+
+[source,json]
+----
+{
+  "name": "updated_role",
+  "description": "Updated role description"
+}
+----
+
+=== Delete Role
+
+*Method*: DELETE
+*URL*: http://localhost:8080/api/roles/{id}
+
+
+== Permission Management
+
+=== Create Permission
+
+*Method*: POST
+*URL*: http://localhost:8080/api/permissions
+*Content-Type*: application/json
+
+[source,json]
+----
+{
+  "name": "example_permission"
+}
+----
+
+=== Get Permission by ID
+
+*Method*: GET
+*URL*: http://localhost:8080/api/permissions/{id}
+
+=== Update Permission
+
+*Method*: PUT
+*URL*: http://localhost:8080/api/permissions/{id}
+*Content-Type*: application/json
+
+[source,json]
+----
+{
+  "name": "updated_permission"
+}
+----
+
+=== Delete Permission
+
+*Method*: DELETE
+*URL*: http://localhost:8080/api/permissions/{id}
